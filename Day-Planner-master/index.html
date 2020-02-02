@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src= "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Fondamento&display=swap" rel="stylesheet">
+    <title>Day Planner</title>
+    </head>
+
+    <body>
+    </head>
+        <header class="jumbotron">
+            <h1 class="display-1">Day Planner</h1>
+            <p class="lead">This calendar allows you to add events and then keep track of past and present events.</p>
+             <br>
+            <p id="currentDay" class="lead"></p>
+    </header>  
+    <div class="container" style= "text-align: center;" id= "ads"> 
+        <div class= "row">
+            <div class="col-md-1 col-3 border-top border-bottom border-secondary" id="ts1" style = "padding: 0px !important;"><br>9:00a
+                </div>
+            <div class="col-md-10 col-6"  style = "padding: 0px !important;">  
+                <input type="text" class="toDo" style= "min-height: 48px; width: 100%;" id="myInput1" placeholder="..."></input>
+            </div> 
+            <div class="col-md-1 col-3" style = "padding: 0px !important; background: grey; border-radius: .3rem;">      
+                <button type="button" class= "btn saveBtn btn-lg btn-right" id="save1" style="width: 100%; height: 100%; background: grey; padding: 0px !important;">
+                        <i class="far fa-save"></i>
+                    </button>
+            </div>        
+        </div> 
+
+        <div class= "row">
+            <div class="col-md-1 col-3 border-top border-bottom border-secondary" id="ts2" style = "padding: 0px !important;"><br>10:00a 
+            </div>
+            <div class="col-md-10 col-6" style = "padding: 0px !important;"> 
+                <input type="text" class="toDo" style= "min-height: 48px; width: 100%;" id="myInput2" placeholder="..."></input>
+            </div>
+            <div class="col-md-1 col-3" style = "padding: 0px !important; background: grey; border-radius: .3rem;">   
+                <button type="button" class= "btn saveBtn btn-lg btn-left" id="save2" style="width: 100%; height: 100%; background: grey;">
+                        <i class="far fa-save"></i>
+                    </button>
+            </div>        
+        </div>
+
+        <div class= "row">
+            <div class="col-md-1 col-3 border-top border-bottom border-secondary" id="ts3" style = "padding: 0px !important;"><br>11:00a
+                </div>
+            <div class="col-md-10 col-6" style = "padding: 0px !important;">    
+                <input type="text" class="toDo" style= "min-height: 48px; width: 100%;" id="myInput3" placeholder="..."></input>
+            </div>       
+            <div class="col-md-1 col-3" style = "padding: 0px !important; background: grey; border-radius: .3rem;">
+                <button type="button" class= "btn saveBtn btn-lg btn-left" id="save3" style="width: 100%; height: 100% ;background: grey;">
+                        <i class="far fa-save"></i>
+                    </button>
+            </div>                       
+        </div>
+
+        <div class= "row">
+            <div class="col-md-1 col-3 border-top border-bottom border-secondary"  id="ts4" style = "padding: 0px !important;"><br>12:00
+                </div>
+            <div class="col-md-10 col-6" style = "padding: 0px !important;">
+                <input type="text" class="toDo" style= "min-height: 48px; width: 100%;" id="myInput4" placeholder="..."></input>
+            </div>    
+            <div class="col-md-1 col-3" style = "padding: 0px !important; background-color: grey; border-radius: 3rem;">
+                <button type="button" class= "btn saveBtn btn-lg btn-left" id="save4" style="width: 100%; height: 100%; background: grey;">
+                    <i class="far fa-save"></i>
+                </button> 
+            </div>
+        </div>
+
+        <div class= "row">
+            <div class="col-md-1 col-3 border-top border-bottom border-secondary" id="ts5" style = "padding: 0px !important;"><br>1:00p
+               </div>
+            <div class="col-md-10 col-6" style = "padding: 0px !important;">
+                <input type="text" class="toDo" style= "min-height: 48px; width: 100%;" id="myInput5" placeholder="..."></input>
+            </div>        
+            <div class="col-md-1 col-3" style = "padding: 0px !important; background-color: grey; border-radius: 3rem;">  
+                <button type="button" class= "btn saveBtn btn-lg btn-left" id="save5" style="width: 100%; height: 100%; background: grey;">
+                        <i class="far fa-save"></i>
+                </button>
+            </div>       
+        </div>
+
+        <div class= "row">
+            <div class="col-md-1 col-3 border-top border-bottom border-secondary" id="ts6" style = "padding: 0px !important;"><br>2:00p
+                </div>
+            <div class="col-md-10 col-6" style = "padding: 0px !important;">
+                <input type="text" class="toDo" style= "min-height: 48px; width: 100%;" id="myInput6" placeholder="..."></input>
+            </div>
+            <div class="col-md-1 col-3" style = "padding: 0px !important; background-color: grey; border-radius: 3rem;">
+                <button type="button" class= "btn saveBtn btn-lg btn-left" id="save6" style="width: 100%; height: 100%; background: grey;">
+                    <i class="far fa-save"></i>
+                </button>
+            </div>      
+        </div>
+
+        <div class= "row">
+            <div class="col-md-1 col-3 border-top border-bottom border-secondary" id="ts7" style = "padding: 0px !important;"><br>3:00p
+                </div>
+            <div class="col-md-10 col-6" style = "padding: 0px !important;">
+                <input type="text" class="toDo" style= "min-height: 48px; width: 100%;" id="myInput7" placeholder="..."></input>
+            </div>
+            <div class="col-md-1 col-3" style = "padding: 0px !important; background-color: grey; border-radius: 3rem;">
+                <button type="button" class="btn saveBtn btn-lg btn-left btn-outline-white" id="save7" style="width: 100%; height: 100%; background: grey; border: 1px solid initial;">
+                    <i class="far fa-save"></i>
+                </button> 
+            </div>     
+        </div>
+
+        <div class= "row">
+            <div class="col-md-1 col-3 border-top border-bottom border-secondary" id="ts8" style = "padding: 0px !important;"><br>4:00p
+                </div>
+            <div class="col-md-10 col-6" style = "padding: 0px !important;">
+                <input type="text" class="toDo" style= "min-height: 48px; width: 100%;" id="myInput8" placeholder="..."></input>
+            </div>
+                <div class="col-md-1 col-3" style = "padding: 0px !important; background-color: grey; border-radius: 3rem;">
+                    <button type="button" class="btn saveBtn btn-lg btn-left" id="save8" style="width: 100%; height: 100%; background: grey;">
+                        <i class="far fa-save"></i>
+                    </button> 
+                </div>    
+        </div>
+
+        <div class= "row">
+            <div class="col-md-1 col-3 border-top border-bottom border-secondary" id="ts9" style = "padding: 0px !important;"><br>5:00p
+                </div>
+            <div class="col-md-10 col-6 border-bottom border-secondary" style = "padding: 0px !important; border-width: 2px;">
+                <input type="text" class="toDo" style= "min-height: 48px; width: 100%;" id="myInput9" placeholder="..."></input>
+            </div>
+                <div class="col-md-1 col-3" style = "padding: 0px !important; background-color: grey; border-radius: 3rem;">
+                    <button type="button" class="btn saveBtn btn-lg btn-left" id="save9" style="width: 100%; height: 100%; background: grey;">
+                        <i class="far fa-save"></i>
+                    </button>
+                </div>      
+        </div>
+    </div>
+    <script src= "script.js"></script>
+    <script src="moment.js"></script>
+</body>
+
+
+
+
+
